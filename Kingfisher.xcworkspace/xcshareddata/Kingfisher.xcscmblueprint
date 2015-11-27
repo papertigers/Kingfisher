@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "17FB51EC7B87DC25DD21E28FDFD877B479CFFAC1",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "745017D941DF76947D50BD5E82B059F25FC2F86C" : 0,
+    "17FB51EC7B87DC25DD21E28FDFD877B479CFFAC1" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "1EFE131A-DC45-4A6A-8579-EC25000C5AB2",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "745017D941DF76947D50BD5E82B059F25FC2F86C" : "..",
+    "17FB51EC7B87DC25DD21E28FDFD877B479CFFAC1" : "Kingfisher\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "Kingfisher",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Kingfisher.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:papertigers\/Kingfisher.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "17FB51EC7B87DC25DD21E28FDFD877B479CFFAC1"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:papertigers\/salt-formulas.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "745017D941DF76947D50BD5E82B059F25FC2F86C"
+    }
+  ]
+}

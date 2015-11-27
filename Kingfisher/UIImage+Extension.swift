@@ -124,7 +124,9 @@ func UIImageGIFRepresentation(image: UIImage, duration: NSTimeInterval, repeatCo
     }
 
     let frameCount = images.count
-    let gifDuration = duration <= 0.0 ? image.duration / Double(frameCount) : duration / Double(frameCount)
+//    let gifDuration = duration <= 0.0 ? image.duration / Double(frameCount) : duration / Double(frameCount)
+    let gifDuration = duration <= 0.0 ? image.duration : duration / Double(frameCount)
+
     
     let frameProperties = [kCGImagePropertyGIFDictionary as String: [kCGImagePropertyGIFDelayTime as String: gifDuration]]
     let imageProperties = [kCGImagePropertyGIFDictionary as String: [kCGImagePropertyGIFLoopCount as String: repeatCount]]
