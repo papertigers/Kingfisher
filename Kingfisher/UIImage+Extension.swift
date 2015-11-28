@@ -125,10 +125,10 @@ func UIImageGIFRepresentation(image: UIImage, duration: NSTimeInterval, repeatCo
 
     let frameCount = images.count
 //    let gifDuration = duration <= 0.0 ? image.duration / Double(frameCount) : duration / Double(frameCount)
-    let gifDuration = duration <= 0.0 ? image.duration : duration / Double(frameCount)
+//    let gifDuration = duration <= 0.0 ? image.duration : duration / Double(frameCount)
 
     
-    let frameProperties = [kCGImagePropertyGIFDictionary as String: [kCGImagePropertyGIFDelayTime as String: gifDuration]]
+//    let frameProperties = [kCGImagePropertyGIFDictionary as String: [kCGImagePropertyGIFDelayTime as String: gifDuration]]
     let imageProperties = [kCGImagePropertyGIFDictionary as String: [kCGImagePropertyGIFLoopCount as String: repeatCount]]
     
     let data = NSMutableData()
@@ -139,6 +139,8 @@ func UIImageGIFRepresentation(image: UIImage, duration: NSTimeInterval, repeatCo
     CGImageDestinationSetProperties(destination, imageProperties)
     
     for image in images {
+        let frameDuration = image.duration
+        let frameProperties = [kCGImagePropertyGIFDictionary as String: [kCGImagePropertyGIFDelayTime as String: frameDuration]]
         CGImageDestinationAddImage(destination, image.CGImage!, frameProperties)
     }
     
