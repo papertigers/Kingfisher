@@ -139,7 +139,10 @@ func UIImageGIFRepresentation(image: UIImage, duration: NSTimeInterval, repeatCo
     CGImageDestinationSetProperties(destination, imageProperties)
     
     for image in images {
-        let frameDuration = image.duration
+        print(image.duration)
+        print(frameCount)
+        let frameDuration = image.duration / Double(frameCount)
+        print(frameDuration)
         let frameProperties = [kCGImagePropertyGIFDictionary as String: [kCGImagePropertyGIFDelayTime as String: frameDuration]]
         CGImageDestinationAddImage(destination, image.CGImage!, frameProperties)
     }
