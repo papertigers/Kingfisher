@@ -186,7 +186,7 @@ extension UIImage {
         if frameCount == 1 {
             return images.first
         } else {
-            return UIImage.animatedImageWithImages(images, duration: duration <= 0.0 ? gifDuration / 100 : duration)
+            return UIImage.animatedImageWithImages(images, duration: duration <= 0.0 ? gifDuration / Double(frameCount) : duration)
         }
     }
 }
